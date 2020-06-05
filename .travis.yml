@@ -1,0 +1,22 @@
+sudo: required
+
+services:
+    - docker
+
+before install:
+    - docker build -f Dockerfile -t cbsaikumar/fullstack-with-docker
+
+script:
+    - docker run cbsaikumar/fullstack-with-docker
+
+deploy:
+    provider: elasticbeanstalk
+    access_key_id: AKIAVFNVPOQGEAVFZQUY
+    secret_access_key: 
+        secure: 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
+    region: "us-east-1"
+    app: "fullstack-with-docker"
+    env: "fullstack-with-docker-env"
+    bucket_name: "fullstack-with-docker-s3-bucket-8080"
+    on:
+        branch: master
