@@ -11,9 +11,9 @@ script:
 
 deploy:
     provider: elasticbeanstalk
-    access_key_id: AKIAVFNVPOQGEAVFZQUY
+    access_key_id: $access_key_id
     secret_access_key: 
-        secure: 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
+        secure: $secret_access_key
     region: "us-east-1"
     app: "fullstack-with-docker"
     env: "fullstack-with-docker-env"
