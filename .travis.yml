@@ -4,7 +4,7 @@ services:
     - docker
 
 before install:
-    - docker build -f dockerfile -t cbsaikumar/fullstack-with-docker
+    - docker build -f dockerfile -t cbsaikumar/fullstack-with-docker .
 
 script:
     - docker run cbsaikumar/fullstack-with-docker
