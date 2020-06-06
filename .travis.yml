@@ -7,7 +7,7 @@ before install:
     - docker build -f dockerfile.dev -t cbsaikumar/fullstack-with-docker .
 
 script:
-    - docker run cbsaikumar/fullstack-with-docker
+    - docker run -d -p 8080:8080 cbsaikumar/fullstack-with-docker
 
 deploy:
     provider: elasticbeanstalk
