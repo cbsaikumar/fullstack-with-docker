@@ -14,7 +14,7 @@ deploy:
     access_key_id: $access_key_id
     secret_access_key: 
         secure: $secret_access_key
-    region: "us-east-1"
+    region: "us-east-1b"
     app: "fullstack-with-docker"
     env: "fullstack-with-docker-env"
     bucket_name: "fullstack-with-docker-s3-bucket-8080123456789"
