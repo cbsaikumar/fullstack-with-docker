@@ -17,6 +17,6 @@ deploy:
     region: "us-east-1"
     app: "fullstack-with-docker"
     env: "fullstack-with-docker-env"
-    bucket_name: "fullstack-with-docker-s3-bucket-8080"
+    bucket_name: "fullstack-with-docker-s3-bucket-8080123456789"
     on:
         branch: master
